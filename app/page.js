@@ -1,57 +1,39 @@
-import Image from 'next/image'
+// import Image from "next/image";
 
-import Activities from './components/Activities'
-import Hero from './components/Hero'
-import About from './components/About'
+import Activities from "./components/Activities";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Gallery from "./components/Gallery";
+import Features from "./components/Features";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
     <main>
-     
-    <Hero/>
-    <Activities/>
-    <About/>
-
-      <section className='gallery p-4'> {/* Added padding for better spacing */}
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> {/* Responsive grid with 1 column on small screens, 2 columns on medium, and 3 columns on large */}
-    <div className="bg-gray-300 p-2">image 1</div> {/* Example styling for each image */}
-    <div className="bg-gray-300 p-2">image 2</div>
-    <div className="bg-gray-300 p-2">image 3</div>
-    <div className="bg-gray-300 p-2">image 4</div>
-    <div className="bg-gray-300 p-2">image 5</div>
-    <div className="bg-gray-300 p-2">image 6</div>
-  </div>
-</section>
-
-      <section className='feedback'>feedback</section>
-      
-      
-      <section className='contact p-4'>
-  <h2 className="text-2xl font-bold mb-4">Contact</h2>
-  <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-    <div className="bg-gray-300 p-4">Embedded Map</div>
-    <div className="bg-gray-300 p-4">
-    <form className="bg-white p-6 rounded shadow-md">
-      <div className="mb-4">
-        <label htmlFor="name" className="text-gray-600 block mb-2">Name</label>
-        <input type="text" id="name" name="name" className="w-full border p-2 rounded" />
-      </div>
-
-      <div className="mb-4">
-        <label htmlFor="email" className="text-gray-600 block mb-2">Email</label>
-        <input type="email" id="email" name="email" className="w-full border p-2 rounded" />
-      </div>
-
-      <div className="mb-4">
-        <label htmlFor="message" className="text-gray-600 block mb-2">Message</label>
-        <textarea id="message" name="message" rows="4" className="w-full border p-2 rounded"></textarea>
-      </div>
-
-      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
-    </form>
-    </div>
-  </div>
-</section>
+      <Hero />
+      <Activities />
+      <About />
+      <Features />
+      <section className="p-1 md:p-4 my-20 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center">
+        <div className="min-w-min">
+          <h3 className="text-4xl font-medium mb-8">
+            What does our clients say about us
+          </h3>
+        </div>
+        <div>
+          <script
+            src="https://static.elfsight.com/platform/platform.js"
+            data-use-service-core
+            defer
+          ></script>
+          <div
+            class="elfsight-app-5d49eb1b-05b2-4957-80dc-6d4463f4346f"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+      </section>
+      <Gallery />
+      <Contact />
     </main>
-  )
+  );
 }

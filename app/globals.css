@@ -23,15 +23,22 @@
   
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: black;
   background: white;
   margin: 0 1rem;
+  /* overflow-x: hidden; */
 }
 
 @media (min-width: 1024px) {
   body {
     margin: 0 5rem;
+    overflow-x: hidden;
   }
 }
 
@@ -73,12 +80,8 @@ nav {
   padding: 10px;
 }
 
-header {
-  padding: 10px;
-}
-
-footer {
-  padding: 10px;
-  margin: 20px;
-  color: white;
+h2 {
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
