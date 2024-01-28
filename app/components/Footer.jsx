@@ -17,11 +17,11 @@ const Footer = () => (
 
         </div>
 
-        <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 md:max-w-xs md:text-left mx-auto md:mx-0">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur.
+        <p className="mt-2 max-w-md text-center leading-relaxed text-gray-500 md:max-w-xs md:text-left mx-auto md:mx-0">
+        {Variables.text.description}
         </p>
 
-        <ul className="mt-8 flex justify-center gap-6 md:justify-start md:gap-8">
+        <ul className="mt-4 flex justify-center gap-6 md:justify-start md:gap-8">
           <li>
             <a
               href={Variables.links.facebook}
